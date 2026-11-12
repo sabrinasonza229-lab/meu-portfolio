@@ -1,0 +1,25 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Lista de tarefas: qualquer pessoa lê e apaga;
+    // só aceita criar/alterar se "texto" for string de até 200 caracteres.
+    match /tarefas/{id} {
+      allow read, delete: if true;
+      allow create, update: if request.resource.data.texto is string
+        && request.resource.data.texto.size() <= 200;
+    }
+
+    // Mensagens do formulário de contato: qualquer pessoa pode ENVIAR,
+    // mas ninguém consegue LER pelo site (você lê no console do Firebase).
+    match /mensagens/{id} {
+      allow read, update, delete: if false;
+      allow create: if request.resource.data.nome is string
+        && request.resource.data.nome.size() <= 100
+        && request.resource.data.email is string
+        && request.resource.data.email.size() <= 200
+        && request.resource.data.mensagem is string
+        && request.resource.data.mensagem.size() <= 1000;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+/* CSS Modules (Aula 5): estas classes só valem dentro do Cartao.
+   Nenhum risco de brigar com nomes iguais em outros componentes. */
+.cartao {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  min-height: 440px;
+  padding: 24px;
+  border-radius: var(--raio);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px -24px rgba(255, 106, 26, 0.55);
+}
+
+/* Três variações de gradiente, como nos cards de referência */
+.v0 {
+  background:
+    linear-gradient(90deg, rgba(255, 106, 26, 0) 40%, rgba(255, 106, 26, 0.55) 100%),
+    #0c0a09;
+}
+
+.v1 {
+  background: linear-gradient(160deg, #3a1306 0%, #b43a0b 55%, #ff7a21 100%);
+}
+
+.v2 {
+  background:
+    linear-gradient(270deg, rgba(255, 179, 71, 0.7) 0%, rgba(255, 106, 26, 0) 55%),
+    #0c0a09;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.numero {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 400;
+  color: #fff;
+}
+
+.descricao {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.abrir {
+  margin-top: 4px;
+  padding-top: 16px;
+  font-size: 0.95rem;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.abrir:hover {
+  color: var(--ambar);
+}

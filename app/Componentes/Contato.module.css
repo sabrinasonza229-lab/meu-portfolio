@@ -1,0 +1,38 @@
+.form {
+  display: grid;
+  gap: 20px;
+  max-width: 640px;
+  padding: 32px;
+  background: var(--bg-elevado);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.grupo {
+  display: grid;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.form button {
+  justify-self: start;
+}
+
+.ok,
+.erro {
+  padding: 12px 16px;
+  border-radius: 14px;
+}
+
+.ok {
+  color: #b8f0c8;
+  background: rgba(60, 200, 110, 0.1);
+  border: 1px solid rgba(60, 200, 110, 0.35);
+}
+
+.erro {
+  color: #ffb4a0;
+  background: rgba(255, 90, 50, 0.1);
+  border: 1px solid rgba(255, 90, 50, 0.35);
+}

@@ -1,0 +1,93 @@
+.caixa {
+  max-width: 640px;
+  padding: 32px;
+  background: var(--bg-elevado);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.form input {
+  flex: 1 1 220px;
+  width: auto;
+}
+
+.erro {
+  margin-top: 16px;
+  padding: 12px 16px;
+  color: #ffb4a0;
+  background: rgba(255, 90, 50, 0.1);
+  border: 1px solid rgba(255, 90, 50, 0.35);
+  border-radius: 14px;
+}
+
+.contador {
+  margin: 24px 0 8px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--linha);
+}
+
+.rotulo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.rotulo input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--laranja);
+}
+
+.feita {
+  color: var(--texto-suave);
+  text-decoration: line-through;
+}
+
+.remover {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  background: none;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.remover:hover {
+  color: #ff8f6b;
+  border-color: #ff8f6b;
+}
+
+.nota {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}

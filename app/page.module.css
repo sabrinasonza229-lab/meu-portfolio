@@ -1,0 +1,29 @@
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.foto {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: var(--raio);
+  border: 1px solid var(--linha);
+}
+
+.texto {
+  display: grid;
+  gap: 16px;
+  max-width: 560px;
+  font-size: 1.1rem;
+  color: var(--texto-suave);
+}
+
+@media (min-width: 768px) {
+  .sobre {
+    grid-template-columns: 300px 1fr;
+    gap: 56px;
+  }
+}

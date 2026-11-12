@@ -1,0 +1,56 @@
+.pagina {
+  padding-top: 72px;
+  max-width: 800px;
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 40px;
+  color: var(--texto-suave);
+}
+
+.voltar:hover {
+  color: var(--ambar);
+}
+
+.titulo {
+  font-size: clamp(2.8rem, 9vw, 6rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.descricao {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: var(--texto);
+}
+
+.detalhes {
+  margin-top: 28px;
+  font-size: 1.1rem;
+  color: var(--texto-suave);
+}
+
+.sub {
+  margin: 48px 0 16px;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 8px 18px;
+  background: var(--vidro);
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+}

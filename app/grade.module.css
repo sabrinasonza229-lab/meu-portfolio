@@ -1,0 +1,12 @@
+/* Grade responsiva (Aula 5): celular primeiro, depois a tela grande. */
+.grade {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .grade {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

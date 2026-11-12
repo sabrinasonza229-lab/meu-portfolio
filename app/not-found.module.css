@@ -1,0 +1,27 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 120px;
+}
+
+.codigo {
+  font-size: clamp(5rem, 22vw, 12rem);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  background: linear-gradient(100deg, var(--ambar), var(--laranja));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.titulo {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.texto {
+  margin-bottom: 12px;
+  color: var(--texto-suave);
+}

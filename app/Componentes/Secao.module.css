@@ -1,0 +1,9 @@
+.secao {
+  padding-top: 88px;
+}
+
+.titulo {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 36px;
+  max-width: 14ch;
+}
